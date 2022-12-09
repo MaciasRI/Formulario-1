@@ -1,38 +1,62 @@
+<!-- con esta etiqueta es para que reconozca que el lenguaje va hacer en HTML -->
 <!DOCTYPE html >
 
+<!-- definimos en que tipo de lenguaje vamos a trabajar -->
 <html  lang="es">
+
+<!-- generar al navegador -->
 <head>
+
+<!-- identifica los puntos que colocaremos -->
 <meta charset="UFT-8">
 
+<!-- titulo de la pagina -->
 <title> Formulario</title>
 </head>
-<body style="background-color:black">
 
+<!-- colocar color de fondo a nuestra pagina -->
+<body style="background-color:black">
+</form>
+
+<!-- Colocamos titulo con un color blanco, visibilidad del 100% y tamaño al 200%, y centratemos nuestro titulo -->
 <h1 style="color:aliceblue; width: 100%; font-size: 200%; text-align: center;">
     Formulario
 </h1>
 
+<!-- Aqui dividimos con un color gris la parte que ocupara nuestra ventana -->
 <form style="background-color:grey;">
+
+<!-- esta etiqueta nos permite marcar de manera cerrada nuestra ventana -->
     <fieldset>
+
+<!-- Aqui ponemos un subtitulo a nuestra ventana -->
 <legend style="color:beige">Ingreso de Socios</legend>
 
+<!-- esta equita la pondremos de color negro la cual sera divisible  -->
 <label style="color:black">Nombres: </label>
+
+<!-- este texto tendra la variable nombre -->
 <input type="text"; name="Nombres">
 <label style="color:black">Apellidos: </label>
 <input type="text"; name="Apellidos">
 <label style="color:black">Ciudad: </label>
 <input type="text"; name="Ciudad">
+
+<!-- esta etiqueta es para añadir una fecha -->
 <b style="color:black"> Fecha de inicio</b>
 <input type="date" name="dia"></b><br><br> <!--fecha-->
 
 
+<!-- Esta etiqueta nos permite subir un archivo tipo imagen -->
 <label style="color:black">Foto: </label>
-<input type="text"; name="Nombre">
+<input type="file" name="archivo" class="form__file">
+
 <label style="color:black">Comprobante de pago: </label>
-<input type="text"; name="Nombre">
+<input type="file" name="archivo" class="form__file">
 
     </form>
 <br>
+<!-- Aqui se crean los 2 botones de Enviar y Salir -->
 <center>
     <input type="button" name="boton" value="ENVIAR" style="width:200px; height:45px">
     <input type="button" name="boton" value="SALIR" style="width:200px; height:45px">
